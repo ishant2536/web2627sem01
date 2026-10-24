@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Branch Nested Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Nested table ki styling ke liye */
+        .nested-table {
+            width: 100%;
+            margin: 0;
+        }
+        .nested-table th, .nested-table td {
+            border: 1px solid #999;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body style="background-image: url('./your-image.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+    <h2 style="background-color: white;">College name  <mark >ABES ENGINEERING COLLEGE, GHAZIABAD</mark>.</h2>
+    <p style="background-color: white;"> Less than sign  ">"</p>
+    <p style="background-color: white;"> Greater than sign  ">"</p>
+    <p style="background-color: white;"> Is equal to sign  "="</p>
+    <p style="background-color: white;"> copyright sign  "©️"</p>
+    <h2 style="text-align: center;">Student Details with Branch Table</h2>
+    <hr>
+
+    <h2 style="text-align: center; background-color: white;">Student Details with Nested Branch Table</h2>
+
+    <table style="background-color: white;">
+        <tr>
+            <th>Serial No.</th>
+            <th>Name of Student</th>
+            <th>Branch (Nested Table)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Rahul Sharma</td>
+            <td>
+                <!-- Nested Table for Branches -->
+                <table class="nested-table">
+                    <tr>
+                        <th>Branch No.</th>
+                        <th>Branch Name</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Computer Science</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Information Technology</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Priya Singh</td>
+            <td>
+                <!-- Nested Table for Branches -->
+                <table class="nested-table">
+                    <tr>
+                        <th>Branch No.</th>
+                        <th>Branch Name</th>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Mechanical Engineering</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Information Technology</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
